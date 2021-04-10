@@ -1,0 +1,246 @@
+body, html{
+    margin: 0px;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+/* nav */
+nav{
+    position: relative;
+    height: 2.5em;
+    padding-top: 0.9em;
+}
+
+a{
+    text-decoration: none;
+}
+
+div[class="nav-left"]{
+    padding-left: 1.3em;
+}
+
+div[class="nav-left"] > a, div[class="nav-right"] > a{
+    line-height: 2.5em;
+    padding: 0 0.5em;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+nav a{
+    color: #000000;
+}
+
+div[class="nav-right"]{
+    display: flex;
+    position: absolute;
+    right: 0px;
+    top: 0.9em;
+    align-items: center; 
+    height: 2.5em;
+}
+
+div[class="nav-right"] a[class="nav-right-sm-font"]{
+    font-family: Roboto,RobotoDraft,Arial,sans-serif;
+    font-size: 13px;
+}
+
+div[class="more-menu"]{
+    position: relative;
+    display: inline-block;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 3em;
+    background-color: #ffffff;
+    margin-left: 1em;
+}
+
+div[class="more-menu"]:hover{
+    background-color: #f0f0f0;
+}
+
+div[class="more-menu"] a{
+    display: inline-block;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+div[class="more-menu"] a:hover{
+    text-decoration: none;
+}
+
+div[class="more-menu-dot"]{
+    position: relative;
+    text-align: center;
+    height: 1.5em;
+}
+
+div[class^="more-menu-dot-row"]{
+    position: relative;
+    height: 5.5px;
+}
+
+div[class^="more-menu-dot-row"] span{
+    display:inline-block;
+    margin: -1.2px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #5f6368;
+}
+
+a[class="sign-in"]{
+    display: inline-block;
+    margin: 0 1em;
+    background-color: #1a73e8;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    height: 100%;
+    width: 5.5em;
+    text-align: center;
+    border-radius: 5px;
+}
+
+a[class="sign-in"]:hover{
+    background-color: #2b7de9;
+    text-decoration: none;
+}
+
+/* logo */
+div[class="div-logo"]{
+    height: 25%;
+    max-height: 290px;
+    min-height: 92px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+}
+
+img[class="google-logo"]{
+    display: block;
+    position: absolute;
+    bottom: 5px;
+}
+
+/* search bar */
+div[class="search-area"]{
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 1.5em;
+    width: 95%;
+    max-width: 580px;
+    height: 3em;
+}
+
+img[class="search-icon"]{
+    position: absolute;
+    left: 1em;
+    width: 1.5em;
+}
+
+img[class="voice-icon"]{
+    position: absolute;
+    right: 1em;
+    width: 2em;
+    cursor: pointer;
+}
+
+input[class="search-bar"]{
+    padding-left: 3.5em;
+    height: 100%;
+    width: 100%;
+    border-radius: 2.5em;
+    border: 1px solid #dfe1e5;
+    outline: none;
+}
+
+input[class="search-bar"]:hover{
+
+    /* h-shadow v-shadow blur spread(size) color */
+    box-shadow: 0px 0px 5px 0px #d8d9da;
+}
+
+div[class="submit-buttons"]{
+    margin: 2em auto;
+    text-align: center;
+}
+
+div[class="submit-buttons"] button{
+    border: 1px solid #f8f9fa;
+    background-color: #f8f9fa;
+    height: 3em;
+    font-size: 14px;
+    margin: 0px 0.2em;
+    padding: 0 1.4em;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+div[class="submit-buttons"] button:hover{
+    border: 1px solid #d8d9da;
+}
+
+div[class="info"]{
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+div[class="info"] a{
+    margin-bottom: 3em;
+}
+
+/* footer */
+footer{
+    text-align: center;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+footer a{
+    display: inline-block;
+    padding: 1.1em;
+    color: #70757a;
+}
+
+div[class="footer-mid"] img{
+    width: 0.8em;
+    margin-right: 0.2em
+}
+
+div[class="footer-left"], div[class="footer-right"]{
+    display: inline-block;
+    margin: 0px 1.2em;
+}
+
+
+@media screen and (min-width: 1296px){
+    /* footer */
+    footer div{
+        display: inline-block;
+    }
+
+    div[class="footer-left"]{
+        position: absolute;
+        left: 0em;
+    }
+
+    div[class="footer-right"]{
+        position: absolute;
+        right: 0em;
+    }
+}
