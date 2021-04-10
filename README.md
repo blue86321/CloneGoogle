@@ -1,2 +1,2 @@
 # CloneGoogle
-clone google webpage
+front-end dev practice. Clone the google webpage
